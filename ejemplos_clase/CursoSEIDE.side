@@ -1,0 +1,575 @@
+{
+  "id": "be0e5e5d-624a-43d4-8211-9d575c136cd6",
+  "version": "2.0",
+  "name": "Curso SE IDE",
+  "url": "http://songs-by-sinatra.herokuapp.com",
+  "tests": [{
+    "id": "094022da-7909-4784-9bc5-0ef5899a8f23",
+    "name": "Login",
+    "commands": [{
+      "id": "7024e43f-1248-42cd-b82f-03532f5d5fc4",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff98762c-d853-4ad4-9482-e55c218baa89",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "853x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49b5b830-df7b-4fe1-b365-2782a7724b82",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26d008f7-1a0e-46a7-9897-62ca31d691ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "9e72c0cd-94d3-4fde-ad53-2e4fb3f2167e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "8afc5e8f-d9e1-4214-bf5d-191b5e024a76",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Iniciar sesión']", "xpath:attributes"],
+        ["xpath=//font/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd9381fe-480f-47ee-9bac-345b06e6e45e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@id='flash']/div",
+      "targets": [
+        ["css=.flash", "css:finder"],
+        ["xpath=//div[@id='flash']/div", "xpath:idRelative"],
+        ["xpath=//section/div/div", "xpath:position"]
+      ],
+      "value": "Ahora has iniciado sesión como frank."
+    }]
+  }, {
+    "id": "5ae73386-6579-4aaa-8748-1d77099939c8",
+    "name": "Crear Canción",
+    "commands": [{
+      "id": "80d5e0bd-5d6c-4428-9c34-949d15934638",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc2108a7-37b4-4f10-919f-a4e1a385a25c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "855x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6166138-fcf4-4a88-a9b6-9df6af65319e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) font > font",
+      "targets": [
+        ["css=li:nth-child(4) font > font", "css:finder"],
+        ["xpath=//li[4]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adfb9573-d9a0-4a79-84ab-fd928d3f324c",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > font > font",
+      "targets": [
+        ["css=a:nth-child(2) > font > font", "css:finder"],
+        ["xpath=//section/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c262ef90-dde2-440b-aca6-2f8d5c8bec67",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=song[title]", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9911f46-dede-47f6-9e8d-7f50c7e83001",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=song[title]", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Canción Ok"
+    }, {
+      "id": "848cba49-784a-4f1a-9c75-872742350ef5",
+      "comment": "",
+      "command": "click",
+      "target": "id=length",
+      "targets": [
+        ["id=length", "id"],
+        ["name=song[length]", "name"],
+        ["css=#length", "css:finder"],
+        ["xpath=//input[@id='length']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "498dc1ea-9378-43d3-9c05-5efeebcea1ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=length",
+      "targets": [
+        ["id=length", "id"],
+        ["name=song[length]", "name"],
+        ["css=#length", "css:finder"],
+        ["xpath=//input[@id='length']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "3f6c2cbd-b595-4ac3-a8a3-2b9baf7a8974",
+      "comment": "",
+      "command": "click",
+      "target": "id=released_on",
+      "targets": [
+        ["id=released_on", "id"],
+        ["name=song[released_on]", "name"],
+        ["css=#released_on", "css:finder"],
+        ["xpath=//input[@id='released_on']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "001d3f85-7f6a-4289-89fe-c3ab72963317",
+      "comment": "",
+      "command": "click",
+      "target": "css=th:nth-child(4) font > font",
+      "targets": [
+        ["css=th:nth-child(4) font > font", "css:finder"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/thead/tr/th[4]/span/font/font", "xpath:idRelative"],
+        ["xpath=//th[4]/span/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca847139-e345-45e3-915a-6eced6510559",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > font > font",
+      "targets": [
+        ["css=.ui-state-hover > font > font", "css:finder"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr/td[5]/a/font/font", "xpath:idRelative"],
+        ["xpath=//td[5]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc62315d-1c0f-4e6b-b58b-7922e238fd86",
+      "comment": "",
+      "command": "click",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71149e8a-cf84-482a-a16c-c4137b679f97",
+      "comment": "",
+      "command": "type",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Chala chalala chalala"
+    }, {
+      "id": "98c044fb-368c-4f70-8609-1d3e930b2e35",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Guardar canción']", "xpath:attributes"],
+        ["xpath=//font/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29e2016a-4bc5-426b-a110-6bfa0083fdf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'Internal Server Error')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "569a5ae0-9eae-44bf-935d-92a2a82154a7",
+    "name": "Editar Canción",
+    "commands": [{
+      "id": "d76ee0d7-3bd1-4b33-bdc9-163921c9f2fb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1eff0605-544b-4663-aa06-72756f8bea2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "858x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e04723e-8e16-40f4-9803-ef8d99d76f6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) font > font",
+      "targets": [
+        ["css=li:nth-child(4) font > font", "css:finder"],
+        ["xpath=//li[4]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f169bd84-3a0d-43df-ac35-f60164643b2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(120) font > font",
+      "targets": [
+        ["css=li:nth-child(120) font > font", "css:finder"],
+        ["xpath=//ul[@id='songs']/li[120]/a/font/font", "xpath:idRelative"],
+        ["xpath=//li[120]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f65cb9e4-b974-4b5d-8c6a-b21a34370d34",
+      "comment": "",
+      "command": "click",
+      "target": "css=p > a > font > font",
+      "targets": [
+        ["css=p > a > font > font", "css:finder"],
+        ["xpath=//p[3]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79521095-0e48-4e95-b3c2-477c8b737fec",
+      "comment": "",
+      "command": "click",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d89280a2-f23b-4c6c-8451-66523687b851",
+      "comment": "",
+      "command": "type",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "song song song, chalalala, chalalal"
+    }, {
+      "id": "3318449c-4e04-45d2-9b45-adb222cc25e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=font > input",
+      "targets": [
+        ["css=font > input", "css:finder"],
+        ["xpath=//input[@value='Guardar canción']", "xpath:attributes"],
+        ["xpath=//font/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f22a85d-cb8b-4633-8a5e-11f13eedff57",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div/font/font",
+      "targets": [
+        ["css=.flash > font > font", "css:finder"],
+        ["xpath=//div[@id='flash']/div/font/font", "xpath:idRelative"],
+        ["xpath=//div/font/font", "xpath:position"]
+      ],
+      "value": "Canción actualizada con éxito"
+    }]
+  }, {
+    "id": "912a1c51-f682-4d0e-b4c6-9055836ae762",
+    "name": "Logout",
+    "commands": [{
+      "id": "7047c266-bfa6-47e2-9644-0b0af3f4c09b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f20f54d9-47b6-415e-b706-74d6fe6fbc19",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "860x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1298c40a-8515-4376-aa05-85cb565eeaf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.current > font > font",
+      "targets": [
+        ["css=.current > font > font", "css:finder"],
+        ["xpath=//a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ac18c77-7b2b-4761-9863-9bafcef76261",
+      "comment": "",
+      "command": "click",
+      "target": "css=footer font > font",
+      "targets": [
+        ["css=footer font > font", "css:finder"],
+        ["xpath=//footer/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c85c591f-fe4a-4757-977c-9c110175781b",
+      "comment": "",
+      "command": "",
+      "target": "css=.flash > font > font",
+      "targets": [
+        ["css=.flash > font > font", "css:finder"],
+        ["xpath=//div[@id='flash']/div/font/font", "xpath:idRelative"],
+        ["xpath=//div/font/font", "xpath:position"]
+      ],
+      "value": "Ahora has cerrado sesión"
+    }]
+  }, {
+    "id": "92db564b-dc0f-444f-b583-304822f7149d",
+    "name": "AcercaDe",
+    "commands": [{
+      "id": "63a12b11-96f4-406d-ae5b-09c8e107ff44",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f317af29-f621-4153-9095-62c2a53969cf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "855x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15bc10db-e649-4040-af93-a877af4a88fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) font > font",
+      "targets": [
+        ["css=li:nth-child(2) font > font", "css:finder"],
+        ["xpath=//li[2]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff9b1a86-448e-429c-ba1d-68886ae0ebeb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//p/font/font",
+      "targets": [
+        ["css=p > font > font", "css:finder"],
+        ["xpath=//p/font/font", "xpath:position"]
+      ],
+      "value": "Este sitio es una demostración de cómo construir un sitio web utilizando Sinatra."
+    }]
+  }, {
+    "id": "ecc57bdf-f5cd-4d20-806a-92f043652371",
+    "name": "Contacto",
+    "commands": [{
+      "id": "6c20b777-18db-495f-a689-6d8d5e31f00e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d0586df-14aa-4042-af42-045554336ae1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "858x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eea96622-0e8f-41b3-90bc-a74d8b024710",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) font > font",
+      "targets": [
+        ["css=li:nth-child(3) font > font", "css:finder"],
+        ["xpath=//li[3]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d39799d-0db5-4e72-b872-acc27a52ef98",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08548941-7685-48a1-8da5-9ad86f0ffe0b",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "amer"
+    }, {
+      "id": "6b6505fa-3a22-4009-802f-6348c220921e",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed1929e5-69e7-4e37-af2a-7c4c4215b4f8",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "acoyote9@gmail.com"
+    }, {
+      "id": "03ddd941-786a-4d32-b827-c6dc733356e0",
+      "comment": "",
+      "command": "click",
+      "target": "name=message",
+      "targets": [
+        ["name=message", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='message']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3755af51-fb17-422c-9561-37e376761753",
+      "comment": "",
+      "command": "type",
+      "target": "name=message",
+      "targets": [
+        ["name=message", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='message']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Solicito detalles de la cancion"
+    }, {
+      "id": "8f1ba0d0-424e-4f0d-9860-3d840c0c938d",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Enviar mensaje']", "xpath:attributes"],
+        ["xpath=//font/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5601ea6b-29bb-4ce7-8929-fcfafbca6c18",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=font:nth-child(2)",
+      "targets": [
+        ["css=font:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='flash']/div/font/font[2]", "xpath:idRelative"],
+        ["xpath=//font[2]", "xpath:position"]
+      ],
+      "value": "Gracias por tu mensaje. Estaremos en contacto pronto."
+    }]
+  }],
+  "suites": [{
+    "id": "5e5454bd-2996-4e3b-a61b-de3a91cefd1f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["094022da-7909-4784-9bc5-0ef5899a8f23", "5ae73386-6579-4aaa-8748-1d77099939c8", "569a5ae0-9eae-44bf-935d-92a2a82154a7", "912a1c51-f682-4d0e-b4c6-9055836ae762"]
+  }],
+  "urls": ["http://songs-by-sinatra.herokuapp.com/"],
+  "plugins": []
+}
